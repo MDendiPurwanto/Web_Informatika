@@ -1,0 +1,568 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+ 
+body {
+  font-family: 'Roboto', sans-serif;
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+header.navbar-container {
+    width: 100%;
+    max-width: auto;
+    padding-block: 1rem;
+    margin-inline: auto;
+    background-color: #B31312;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+   
+    z-index: 9999;
+    position: fixed; /* Menjadikan header tetap di atas saat scrolling */
+    top: 0; /* Menjadikan header tetap di bagian atas layar */
+  }
+   
+  header.navbar-container .logo img {
+    width: 300px;
+  }
+
+  header.navbar-container .nav-list ul {
+    padding-left: 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem 1rem;
+
+  }
+  header.navbar-container .nav-list li {
+    list-style-type: none;
+  }
+  header.navbar-container .nav-list li a {
+    padding: 0.5rem 1.5rem;
+    border-radius: 999px;
+    text-decoration: none;
+    font-size: 1.05rem;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    transition: all 0.2s ease-in-out;
+  }
+  header.navbar-container .nav-list li:hover a {
+    background-color: #89b0d969;
+    color: white;
+  }
+
+ 
+
+  article {
+    flex: 1;
+    width: 100%;  max-width: 1200px;
+    margin-inline: auto;
+    padding: 2rem 4rem;
+    display: flex;  align-items: center;
+  }
+  article .article-1 .content-description-article {
+    text-align: center;
+    flex: 1 1;
+  }
+  article .article-1 .content-image-article {
+    flex: 2;
+    display: flex;
+  }
+
+  
+
+  article .article-1 .content-image-article img {
+    width: 1042px;
+    min-width: 600px;
+    height: 344px;
+    margin: auto;
+  }
+
+  
+
+  article {
+    flex: 1;
+    width: 100%; 
+    max-width: 1200px;
+    margin-inline: auto;
+    padding: 1rem 3rem;
+    display: flex;  
+    align-items: center;
+  }
+  article .article-2 .article2-content-article {
+    text-align: center;
+    flex: 1 1;
+  }
+  /* article .article-2 .article2-content .title {
+    margin-block: 1rem;
+    font-size: 1.5rem;
+    
+  } */
+  main {
+    flex: 1;
+    width: 100%;  max-width: 1200px;
+    margin-inline: auto;
+    padding: 6rem 4rem;
+    display: flex;  align-items: center;
+  }
+  main .content {
+    flex: 1;
+    display: flex;
+    align-items: center;
+  }
+  main .content .content-description {
+    flex: 1 1;
+  }
+  main .content .content-description .title {
+    margin-block: 1rem;
+    font-size: 2.5rem;
+  }
+  main .content .content-description p {
+    font-size: 1.2rem;
+    line-height: 1.7rem;
+    text-align: justify;
+  }
+  main .content .content-description a {
+  
+    padding: 0.8rem 2.5rem;
+    border: 3px solid transparent;
+    border-radius: 999px;
+    margin-block-start: 1rem;
+    background-color: #B31312;
+    font-family: 'Quicksand', sans-serif;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 700;
+    color: white;
+    cursor: pointer;
+    text-align: justify;
+    transition: all 0.15s ease-in;
+  }
+  main .content .content-description a:hover {
+    border: 1px solid #000000;
+    background-color: transparent;
+    color: #B31312;
+  }
+  main .content .content-image {
+    flex: 1;
+    display: flex;
+  }
+  main .content .content-image img {
+    width: 300px;
+    min-width: 250px;
+    margin: auto;
+  }
+  main aside {
+    position: fixed;
+    inset-block: 0;
+    inset-inline-end: 0;
+  }
+  main aside .social-media {
+    height: 100%;
+    display: flex;
+  }
+  main aside .social-media ul {
+    padding: 1.5rem 1rem;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    margin: auto;
+    background-color: #B31312;
+    display: flex;  flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+  main aside .social-media li {
+    list-style-type: none;
+  }  
+
+  main aside .social-media li a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: white;
+    transition: all 0.1s ease-in-out;
+  }
+  main aside .social-media li a:hover {
+    color: #89b0d9;
+  }
+
+ main akademik{
+    flex: 1;
+    width: 100%; 
+    max-width: 1200px;
+    margin-inline: auto;
+    padding: 5rem 3rem;
+    display: flex;  
+    align-items: center; 
+  }
+    main .civitas-akademik {
+   
+    padding: 20px; /* Padding untuk memberikan ruang di sekitar konten */
+    position: flex;
+    flex-direction: row;
+    align-items: center;
+   
+    z-index: 9999;
+  }
+
+ main .content-description-article {
+      margin-top: 20px; /* Margin atas */
+      text-align: center; /* Center align the content */
+  }
+
+ main .title {
+      color: #333; /* Warna teks */
+      font-size: 24px; /* Ukuran font */
+      font-weight: bold; /* Ketebalan font */
+      align-items: center;
+
+  }
+
+.grid-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  grid-template-columns: repeat(3, 2fr); /* 3 columns with equal width */
+  gap: 20px; /* Gap between grid items */
+}
+
+.grid-item {
+
+  padding: 20px; /* Padding */
+}
+/* card civitas akademik */
+.card {
+  width: 300px; /* Adjust as needed */
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+}
+
+.card-image {
+  width: 100%;
+  height: auto;
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.card-title {
+  margin-top: 0;
+  font-size: 20px;
+  text-align: center;
+}
+
+.card-text {
+  font-size: 16px;
+  color: #666;
+  text-align: justify;
+}
+
+
+
+
+.parent {
+
+  padding-bottom: 3rem;
+  display: grid;
+  place-items: center;
+}
+.button {
+  padding: 0.8rem 2.5rem;
+  border: 3px solid transparent;
+  border-radius: 999px;
+  margin-block-start: 1rem;
+  background-color: #B31312;
+  font-family: 'Quicksand', sans-serif;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 700;
+  color: white;
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.15s ease-in;
+  
+ 
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+
+
+main ormawa{
+  flex: 1;
+  width: 100%; 
+  max-width: 1200px;
+  margin-inline: auto;
+  padding: 5rem 3rem;
+  padding-bottom: 10rem;
+  display: flex;  
+  align-items: center; 
+}
+
+main .ormawa {
+ 
+  padding: 20px; /* Padding untuk memberikan ruang di sekitar konten */
+  position: flex;
+  flex-direction: row;
+  align-items: center;
+ 
+  z-index: 9999;
+}
+
+.content-description-article {
+    margin-top: 20px; /* Margin atas */
+    text-align: center; /* Center align the content */
+}
+
+.title {
+    color: #333; /* Warna teks */
+    font-size: 24px; /* Ukuran font */
+    font-weight: bold; /* Ketebalan font */
+    align-items: center;
+
+}
+
+.footer {
+  background-color: #B31312;
+  color: #fff;
+  text-align: center;
+  padding: 5px;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 5px;
+}
+
+ testimoni{
+  flex: 1;
+  width: 100%; 
+  max-width: 1200px;
+  margin-inline: auto;
+  padding: 1rem 1rem;
+  padding-bottom: 2rem;
+  
+  align-items: center; 
+}
+main .testimoni {
+ 
+  padding: 1px; /* Padding untuk memberikan ruang di sekitar konten */
+  position: flex;
+  flex-direction: row;
+  align-items: center;
+ 
+  z-index: 9999;
+}
+.slide-container{
+  max-width: 1120px;
+  width: 100%;
+  padding: 40px 0;
+}
+.slide-content{
+  margin: 0 40px;
+  overflow: hidden;
+  border-radius: 25px;
+}
+.card{
+  border-radius: 25px;
+  background-color: #FFF;
+}
+.image-content,
+.card-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 14px;
+}
+.image-content{
+  position: relative;
+  row-gap: 5px;
+  padding: 25px 0;
+}
+.overlay{
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #B31312;
+  border-radius: 25px 25px 0 25px;
+}
+.overlay::before,
+.overlay::after{
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: -40px;
+  height: 40px;
+  width: 40px;
+  background-color: #B31312;
+}
+.overlay::after{
+  border-radius: 0 25px 0 0;
+  background-color: #FFF;
+}
+.card-image{
+  position: relative;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  background: #FFF;
+  padding: 3px;
+}
+.card-image .card-img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #B31312;
+}
+.name{
+  font-size: 18px;
+  font-weight: 500;
+  color: #333;
+}
+.description{
+  font-size: 14px;
+  color: #707070;
+  text-align: center;
+}
+.button{
+  border: none;
+  font-size: 16px;
+  color: #FFF;
+  padding: 8px 16px;
+  background-color: #B31312;
+  border-radius: 6px;
+  margin: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.button:hover{
+  background: #B31312;
+}
+
+.swiper-navBtn{
+  color: #B31312;
+  transition: color 0.3s ease;
+}
+.swiper-navBtn:hover{
+  color: #B31312;
+}
+.swiper-navBtn::before,
+.swiper-navBtn::after{
+  font-size: 35px;
+}
+.swiper-button-next{
+  right: 0;
+}
+.swiper-button-prev{
+  left: 0;
+}
+.swiper-pagination-bullet{
+  background-color: #6E93f7;
+  opacity: 1;
+}
+.swiper-pagination-bullet-active{
+  background-color: #4070F4;
+}
+
+  /* Medium devices (768px dan di bawahnya) */
+  @media screen and (max-width: 768px) {
+    header.navbar-container {
+        flex-direction: column;
+      }
+
+      header.navbar-container .nav-list ul {
+        flex-wrap: wrap;
+        column-gap: 0.5rem;
+      }
+      main {
+        padding: 1rem 3rem;
+      }
+      main .content {
+        flex-direction: column;
+        gap: 2rem;
+      }
+      main .content .content-description .title {
+        padding-top: 12rem;
+        font-size: 1.5rem;
+      }
+
+      main .content .content-description p {
+        font-size: 1rem;
+      }
+      main .content .content-image {
+        order: -1; 
+        display: none;     
+      }
+
+      main .content .content-description a {
+        display: none;
+      }
+
+     article {
+        padding: 1rem 3rem;
+      }
+
+      article .content-description-article {
+        flex-direction: column;
+        text-align: center;
+        gap: 2rem;
+        
+      }
+
+      article .article-2 .article2-content-article {
+        flex-direction: column;
+        gap: 2rem;
+      }
+
+
+      article .article-1 .content-image-article{
+       display: none;
+
+     }
+
+     
+    .slide-content{
+      margin: 0 10px;
+    }
+    .swiper-navBtn{
+      display: none;
+    }
+     
+
+     
+    
+}
